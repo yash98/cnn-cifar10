@@ -1,16 +1,16 @@
 #!/bin/sh
 ### Set the job name (for your reference)
-PBS -N cnn_a
+#PBS -N cnn_a
 ### Set the project name, your department code by default
 #PBS -P cse
 ### Request email when job begins and ends
-PBS -m bea
+#PBS -m bea
 ### Specify email address to use for notification.
-PBS -M $USER@iitd.ac.in
+#PBS -M $USER@iitd.ac.in
 ####
-PBS -l select=1:ncpus=2:ngpus=1
+#PBS -l select=1:ncpus=2:ngpus=1
 ### Specify "wallclock time" required for this job, hhh:mm:ss
-#PBS -l walltime=00:17:00
+#PBS -l walltime=00:05:00
 
 #PBS -l software=python
 # After job starts, must goto working directory. 
