@@ -1,0 +1,1 @@
+qsub -o out -e err cnn_a_job.sh
